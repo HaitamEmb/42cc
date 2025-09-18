@@ -3,7 +3,7 @@
 void	do_act(int siguser)
 {
 	static unsigned char	buff;
-	static int	i;
+	static int	i = 0;
 
 	buff |= (siguser == SIGUSR1);
 	i++;
